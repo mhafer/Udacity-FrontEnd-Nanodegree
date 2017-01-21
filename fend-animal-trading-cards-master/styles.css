@@ -1,0 +1,47 @@
+/* add your CSS here */
+body{
+  background-color: #d4f9e5
+}
+
+.card-content{
+  background-color: #fff;
+  padding: 10px;
+  width: 300px;
+  border: 1px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  /*got from Box Shadow CSS generator - recommended tool by Udacity*/
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(202,199,245,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(202,199,245,1);
+    box-shadow: 10px 10px 5px 0px rgba(202,199,245,1);
+
+}
+
+.my-image{
+  height: 200px;
+  width: 300px;
+  /*padding-top: 10px;*/
+  padding-bottom: 10px;
+}
+
+.sloth-info{
+  border: 1px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 280px;
+}
+
+.fun-fact{
+  font-style: italic;
+}
+
+.fun-fact, ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+.bolded-text{
+  font-weight: bold;
+}
