@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="Project 1: Build a Portfolio Site" />
   <meta name="Michelle Salema" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="mobile-web-app-capable" content="yes">
   <title>Michelle's Portfolio</title>
@@ -15,7 +16,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:300|Pacifico" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
   <!-- Icon Fonts -->
   <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial"> 
   <!-- Bootstrap CSS reference -->
@@ -26,6 +26,52 @@
   <script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>
   <!--  Bootstrap JS reference -->
   <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+<style>
+
+	@media screen and (max-width: 405px){
+
+		.logo {
+			margin-left: -9999px;
+		}
+	}
+	
+	/* Medium devices */
+	@media screen and (min-width: 640px) and (max-width: 990px) {
+		
+		.title-super {
+			font-size: 60px;
+		}
+
+	}
+	/* Large devices */
+	@media screen and (min-width: 991px) and (max-width: 1199px) {
+
+		.title-super {
+			font-size: 80px;
+		}
+		.logo {
+			width: 110px;
+			height: 110px;
+		}
+
+	}
+
+	/* Extra large devices */
+	@media (min-width: 1200px) {
+
+		.title-super {
+			font-size: 100px;
+		}
+		.logo {		
+			width: 120px;
+			height: 120px;
+		}
+
+	}
+
+</style>
+
 </head>
 
 <body>
@@ -34,13 +80,24 @@
 
 	<!-- header -->
 		<div class="row">
-		  <div class="col-sm-6 col-md-6 col-lg-6">.col-md-6</div>
-		  <div class="col-sm-6 col-md-6 col-lg-6">.col-md-6</div>
+			<div class="title-wrap">
+			  <div class="col-sm-3 col-md-3 col-lg-3">
+			  	<img class="logo" src="img/my_logo.png" alt="Michelle's logo" width="100px" height="100px" />
+			  </div>
+			  <div class="col-sm-9 col-md-9 col-lg-9 text-right text-uppercase">
+			  	<h1 class="title-super">Michelle Salema</h1>
+			  	<p>Web Developer</p>
+			  </div>
+			 </div>
 		</div>
 
 	<!-- main image  -->
 		<div class="row featured-image">
-		  <div class="col-sm-12 col-md-12 col-lg-12">.col-md-12</div>		  
+		  <div class="col-sm-12 col-md-12 col-lg-12">
+		  	<img class="img-responsive" alt="A picture of Michelle a software developer"
+		  	 src="img/ms-wide-large.jpg" 
+		  	 srcset="img/ms-wide-large.jpg 1280w, img/ms-wide-medium.jpg 980w, img/ms-wide-small.jpg 480w" />
+		  </div>		  
 		</div>
 
 	<!-- main content -->

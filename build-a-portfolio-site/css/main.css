@@ -1,0 +1,33 @@
+body {
+	background-color: #AC9362;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+}
+
+.container {
+	flex-wrap: wrap;
+}
+
+.container .title-wrap{
+	display: flex;
+}
+
+.container .featured-image{
+	display: flex;
+}
+
+.title-super {
+	font-size: 40px;
+}
+
+.logo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
