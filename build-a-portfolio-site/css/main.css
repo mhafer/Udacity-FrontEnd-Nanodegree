@@ -4,15 +4,7 @@ body {
 	color: #fff;
 }
 
-.container {
-	flex-wrap: wrap;
-}
-
 .container .title-wrap{
-	display: flex;
-}
-
-.container .featured-image{
 	display: flex;
 }
 
