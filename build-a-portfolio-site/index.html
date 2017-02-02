@@ -29,10 +29,22 @@
 
 <style>
 
-	@media screen and (max-width: 405px){
+	@media screen and (max-width: 405px) {
 
 		.logo {
 			margin-left: -9999px;
+		}
+
+		.disappear-text {
+			margin-left: -9999px;
+		}
+
+		.col-sm-9{
+			width: 100%;
+		}
+
+		.featured-work {
+			margin: 2px;
 		}
 	}
 	
@@ -43,6 +55,28 @@
 			font-size: 60px;
 		}
 
+		.title-sub {
+			font-size: 28px;
+		}
+
+		h2 {
+			top: 10%;
+		}
+
+		h2 .white-line,
+		h2 .beige-line {
+			font-size: 36px;
+			line-height: 1.6;
+		}
+
+		h2 .tiny-line {
+			font-size: 16px;
+		}
+
+		.featured-work {
+			margin: 5px;
+		}
+
 	}
 	/* Large devices */
 	@media screen and (min-width: 991px) and (max-width: 1199px) {
@@ -50,9 +84,39 @@
 		.title-super {
 			font-size: 80px;
 		}
+
+		.title-sub {
+			font-size: 34px;
+		}
+
+		h2 {
+			top: 15%;
+		}
+
+		h2 .white-line,
+		h2 .beige-line {
+			font-size: 48px;
+			line-height: 1.6;
+		}
+
+		h2 .tiny-line {
+			font-size: 16px;
+			line-height: 1.6;
+		}
+
+		.featured-work {
+			margin: 0;
+			border: 0;
+		}
+
 		.logo {
 			width: 110px;
 			height: 110px;
+		}
+
+		.container {
+			width: 90%;
+			margin: auto;
 		}
 
 	}
@@ -63,9 +127,39 @@
 		.title-super {
 			font-size: 100px;
 		}
+
+		.title-sub {
+			font-size: 40px;
+		}
+
+		h2 {
+			top: 12%;
+		}
+
+		h2 .white-line,
+		h2 .beige-line {
+			font-size: 74px;
+			line-height: 1.4;
+		}
+
+		h2 .tiny-line {
+			font-size: 16px;
+			line-height: 1.6;
+		}
+
+		.featured-work {
+			margin: 0;
+			border: 0;
+		}
+
 		.logo {		
 			width: 120px;
 			height: 120px;
+		}
+
+		.container {
+			width: 80%;
+			margin: auto;
 		}
 
 	}
@@ -77,39 +171,56 @@
 <body>
 
 	<div class="container">
-
 	<!-- header -->
 		<div class="row">
 			<div class="title-wrap">
-			  <div class="col-sm-3 col-md-3 col-lg-3">
+			  <div class="col-sm-3 col-md-3 col-lg-3 text-center">
 			  	<img class="logo" src="img/my_logo.png" alt="Michelle's logo" width="100px" height="100px" />
 			  </div>
 			  <div class="col-sm-9 col-md-9 col-lg-9 text-right text-uppercase">
 			  	<h1 class="title-super">Michelle Salema</h1>
-			  	<p>Web Developer</p>
+			  	<p class="title-sub">Web Developer</p>
 			  </div>
 			 </div>
 		</div>
 
 	<!-- main image  -->
-		<div class="row featured-image">
-		  <div class="col-sm-12 col-md-12 col-lg-12">
-		  	<img class="img-responsive" alt="A picture of Michelle a software developer"
-		  	 src="img/ms-wide-large.jpg" 
-		  	 srcset="img/ms-wide-large.jpg 1280w, img/ms-wide-medium.jpg 980w, img/ms-wide-small.jpg 480w" />
+		<div class="row">
+		  <div class="col-sm-12 col-md-12 col-lg-12  featured-image">
+		  	<img class="img-responsive img-main" alt="A picture of Michelle a software developer"
+		  	src="img/ms-wide-large.jpg"
+		  	srcset="img/ms-wide-large.jpg 1280w, img/ms-wide-medium.jpg 980w, img/ms-wide-small.jpg 480w" />
+		  	<h2 class="disappear-text"><span class="white-line">i am a</span><br/>
+			  	<span class="beige-line">pro.</span><br/>
+			  	<span class="white-line">gram.</span><br/>
+			  	<span class="beige-line">mer.</span><br/>
+			  	<span class="tiny-line">and i kick butt</span>
+			</h2>
 		  </div>		  
 		</div>
 
 	<!-- main content -->
 		<div class="row featured-title">
-		  <div class="col-sm-12 col-md-12 col-lg-12">.col-md-12</div>
+		  <div class="col-sm-12 col-md-12 col-lg-12 text-uppercase">Featured Work</div>
 		</div>
 
 	<!-- portfolio references -->
-		<div class="row featured-work">
-		  <div class="col-sm-4 col-md-4 col-lg-4">.col-md-4</div>
-		  <div class="col-sm-4 col-md-4 col-lg-4">.col-md-4</div>
-		  <div class="col-sm-4 col-md-4 col-lg-4">.col-md-4</div>
+		<div class="row featured-work text-center">
+		  <div class="col-sm-4 col-md-4 col-lg-4 feature-one">
+		  	<img class="img-responsive" src="http://placehold.it/350x150"/>
+		  	<h3>Title Here</h3>
+		  	<p>link</p>
+		  </div>
+		  <div class="col-sm-4 col-md-4 col-lg-4 feature-two">
+		  	<img class="img-responsive" src="http://placehold.it/350x150" />
+		  	<h3>Title Here</h3>
+		  	<p>link</p>
+		  </div>
+		  <div class="col-sm-4 col-md-4 col-lg-4 feature-three">
+		  	<img class="img-responsive" src="http://placehold.it/350x150" />
+		  	<h3>Title Here</h3>
+		  	<p>link</p>
+		  </div>
 		</div>
 		
 	</div>
