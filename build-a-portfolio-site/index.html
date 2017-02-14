@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Project 1: Build a Portfolio Site" />
@@ -9,173 +8,35 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="mobile-web-app-capable" content="yes">
   <title>Michelle's Portfolio</title>
-  <!-- Normalize CSS across different platforms -->
-  <link src="//normalize-css.googlecode.com/svn/trunk/normalize.css" rel="stylesheet">
-  <!--  Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-  <link href="http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:300|Pacifico" rel="stylesheet" type="text/css">
-  <!-- Icon Fonts -->
-  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial"> 
-  <!-- Bootstrap CSS reference -->
+  <!-- normalize CSS across different platforms -->
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+  <!--  google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
+  <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:300|Pacifico">
+  <!-- icon font awesome -->
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+  <!-- bootstrap CSS reference -->
   <link rel="stylesheet" href="css/bootstrap.css">
-  <!-- My CSS reference -->
-  <link href="css/main.css" rel="stylesheet" type="text/css">  
-  <!-- JQuery reference -->
-  <script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>
-  <!--  Bootstrap JS reference -->
-  <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-
-<style>
-
-	@media screen and (max-width: 405px) {
-
-		.logo {
-			margin-left: -9999px;
-		}
-
-		.disappear-text {
-			margin-left: -9999px;
-		}
-
-		.col-sm-9{
-			width: 100%;
-		}
-
-		.featured-work {
-			margin: 2px;
-		}
-	}
-	
-	/* Medium devices */
-	@media screen and (min-width: 640px) and (max-width: 990px) {
-		
-		.title-super {
-			font-size: 60px;
-		}
-
-		.title-sub {
-			font-size: 28px;
-		}
-
-		h2 {
-			top: 10%;
-		}
-
-		h2 .white-line,
-		h2 .beige-line {
-			font-size: 36px;
-			line-height: 1.6;
-		}
-
-		h2 .tiny-line {
-			font-size: 16px;
-		}
-
-		.featured-work {
-			margin: 5px;
-		}
-
-	}
-	/* Large devices */
-	@media screen and (min-width: 991px) and (max-width: 1199px) {
-
-		.title-super {
-			font-size: 80px;
-		}
-
-		.title-sub {
-			font-size: 34px;
-		}
-
-		h2 {
-			top: 15%;
-		}
-
-		h2 .white-line,
-		h2 .beige-line {
-			font-size: 48px;
-			line-height: 1.6;
-		}
-
-		h2 .tiny-line {
-			font-size: 16px;
-			line-height: 1.6;
-		}
-
-		.featured-work {
-			margin: 0;
-			border: 0;
-		}
-
-		.logo {
-			width: 110px;
-			height: 110px;
-		}
-
-		.container {
-			width: 90%;
-			margin: auto;
-		}
-
-	}
-
-	/* Extra large devices */
-	@media (min-width: 1200px) {
-
-		.title-super {
-			font-size: 100px;
-		}
-
-		.title-sub {
-			font-size: 40px;
-		}
-
-		h2 {
-			top: 12%;
-		}
-
-		h2 .white-line,
-		h2 .beige-line {
-			font-size: 74px;
-			line-height: 1.4;
-		}
-
-		h2 .tiny-line {
-			font-size: 16px;
-			line-height: 1.6;
-		}
-
-		.featured-work {
-			margin: 0;
-			border: 0;
-		}
-
-		.logo {		
-			width: 120px;
-			height: 120px;
-		}
-
-		.container {
-			width: 80%;
-			margin: auto;
-		}
-
-	}
-
-</style>
-
+  <!-- my CSS reference -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- my media queries -->
+  <link rel="stylesheet" href="css/media.css">
+  <!-- jquery reference -->
+  <script src="bootstrap/js/jquery-3.1.1.min.js"></script>
+  <!--  bootstrap js reference -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-
 	<div class="container">
-	<!-- header -->
+
+	<!-- top section -->
 		<div class="row">
 			<div class="title-wrap">
 			  <div class="col-sm-3 col-md-3 col-lg-3 text-center">
-			  	<img class="logo" src="img/my_logo.png" alt="Michelle's logo" width="100px" height="100px" />
+			  	<img class="logo" src="img/my-logo-sm.png" title="Michelle's Home Page" alt="Michelle's logo"
+			  	srcset="img/my-logo-md.png 1000w, img/my-logo-sm.png 400w" />
 			  </div>
 			  <div class="col-sm-9 col-md-9 col-lg-9 text-right text-uppercase">
 			  	<h1 class="title-super">Michelle Salema</h1>
@@ -183,48 +44,70 @@
 			  </div>
 			 </div>
 		</div>
+	<!-- end of top section -->
 
-	<!-- main image  -->
+	<!-- middle section -->
 		<div class="row">
-		  <div class="col-sm-12 col-md-12 col-lg-12  featured-image">
-		  	<img class="img-responsive img-main" alt="A picture of Michelle a software developer"
-		  	src="img/ms-wide-large.jpg"
-		  	srcset="img/ms-wide-large.jpg 1280w, img/ms-wide-medium.jpg 980w, img/ms-wide-small.jpg 480w" />
-		  	<h2 class="disappear-text"><span class="white-line">i am a</span><br/>
+		  <div class="col-sm-12 col-md-12 col-lg-12  featured-image"  title="Hi, I'm Michelle!">
+		  	<img class="img-responsive img-main" alt="A picture of Michelle, a software developer"
+		  	src="img/ms-wide-small.jpg"
+		  	srcset="img/ms-wide-large.jpg 2200w, img/ms-wide-medium.jpg 1600w, img/ms-wide-small.jpg 800w" />
+		  	<h2 class="blurb-text">
+		  		<span class="white-line">i am a</span><br/>
 			  	<span class="beige-line">pro.</span><br/>
 			  	<span class="white-line">gram.</span><br/>
 			  	<span class="beige-line">mer.</span><br/>
 			  	<span class="tiny-line">and i kick butt</span>
 			</h2>
-		  </div>		  
+		  </div>
 		</div>
+	<!-- end of middle section -->
 
-	<!-- main content -->
+	<!-- bottom content -->
 		<div class="row featured-title">
-		  <div class="col-sm-12 col-md-12 col-lg-12 text-uppercase">Featured Work</div>
+		  <div class="col-sm-12 col-md-12 col-lg-12 text-uppercase feature-col">
+		  	<h2 class="feature-header">Featured Work</h2>
+		  </div>
 		</div>
-
-	<!-- portfolio references -->
+		<!-- featured items -->
 		<div class="row featured-work text-center">
 		  <div class="col-sm-4 col-md-4 col-lg-4 feature-one">
 		  	<img class="img-responsive" src="http://placehold.it/350x150"/>
-		  	<h3>Title Here</h3>
-		  	<p>link</p>
+		  	<h3>Appify</h3>
+		  	<p>The <a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" target="_blank" title="Click Me">link</a> here will take you to the project. But you wont find it yet... the project has yet to be started.</p>
+		  	<!-- TODO: replace with project 1 info once completed -->
 		  </div>
 		  <div class="col-sm-4 col-md-4 col-lg-4 feature-two">
 		  	<img class="img-responsive" src="http://placehold.it/350x150" />
-		  	<h3>Title Here</h3>
-		  	<p>link</p>
+		  	<h3>Sunflower</h3>
+		  	<p>The <a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" target="_blank" title="Click Me">link</a> here will take you to the project. But you wont find it yet... the project has yet to be started.</p>
+		  	<!-- TODO: replace with project 2 info once completed -->
 		  </div>
 		  <div class="col-sm-4 col-md-4 col-lg-4 feature-three">
 		  	<img class="img-responsive" src="http://placehold.it/350x150" />
-		  	<h3>Title Here</h3>
-		  	<p>link</p>
+		  	<h3>Bokeh</h3>
+		  	<p>The <a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" target="_blank" title="Click Me">link</a> here will take you to the project. But you wont find it yet... the project has yet to be started.</p>
+		  	<!-- TODO: replace with project 3 info once completed -->
 		  </div>
 		</div>
-		
+	<!-- end of bottom section -->
+
 	</div>
 	<!-- end of container -->
 
+	<!-- footer -->
+	<footer>
+		<!-- social media links -->
+        <ul>
+          <li><a href="https://www.linkedin.com/in/michellesalema" class="fontawesome-linkedin social-link" target="_blank" title="Michelle's LinkedIn"></a></li>
+          <li><a href="mailto:missmichellesalema@gmail.com" class="fontawesome-envelope social-link" target="_blank" title="missmichellesalema@gmail.com"></a></li>
+          <li><a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" class="fontawesome-github social-link" target="_blank" title="Michelle's Github Account"></a></li>
+        </ul>
+        <!-- copyright line -->
+        <p class="copyright">Copyright© 2017 Developed By
+        	<span class="fancy-text">by </span>
+            <span class="signature-text"><a href="http://www.michellesalema.com" target="_blank" title="Michelle's Previous Website">Michelle Hafer</a></span>
+        </p>
+     </footer>
 </body>
 </html>

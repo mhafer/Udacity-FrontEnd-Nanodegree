@@ -1,0 +1,184 @@
+/* collapsed browser view */
+@media screen and (max-width: 359px) {
+	.logo,
+	.blurb-text {
+		margin-left: -9999px;
+	}
+
+	.social-link {
+	  font-size: 18px;
+	}
+
+	[class*="fontawesome-"]:before {
+	  width: 3em;
+	}
+}
+
+/* small devices*/
+@media screen and (min-width: 360px) and (max-width: 639px) {
+	.logo {
+		width: 50px;
+		height: 50px;
+	}
+
+	.blurb-text {
+		top: 3%;
+	}
+
+	.white-line,
+	.beige-line {
+		font-size: 20px;
+		line-height: 1.9;
+	}
+
+	.tiny-line {
+		font-size: 11px;
+	}
+
+	.col-sm-9{
+		width: 100%;
+	}
+
+	.featured-work {
+		margin: 2px;
+	}
+
+	.social-link {
+	  font-size: 20px;
+	}
+}
+
+/* medium devices */
+@media screen and (min-width: 640px) and (max-width: 990px) {
+	.title-super {
+		font-size: 60px;
+	}
+
+	.title-sub {
+		font-size: 28px;
+	}
+
+	.blurb-text {
+		top: 10%;
+	}
+
+	.white-line,
+	.beige-line {
+		font-size: 36px;
+		line-height: 1.6;
+	}
+
+	.tiny-line {
+		font-size: 16px;
+	}
+
+	.feature-col {
+		padding-left: 0px;
+	}
+
+	.feature-header {
+		font-size: 35px;
+	}
+
+	.featured-work {
+		margin: 5px;
+	}
+}
+
+/* large devices */
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+	.title-super {
+		font-size: 80px;
+	}
+
+	.title-sub {
+		font-size: 34px;
+	}
+
+	.blurb-text {
+		top: 15%;
+	}
+
+	.white-line,
+	.beige-line {
+		font-size: 48px;
+		line-height: 1.6;
+	}
+
+	.tiny-line {
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+	.feature-col {
+		padding-left: 0px;
+	}
+
+	.feature-header {
+		font-size: 45px;
+	}
+
+	.featured-work {
+		margin: 0;
+		border: 0;
+	}
+
+	.logo {
+		width: 110px;
+		height: 110px;
+	}
+
+	.container {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+/* extra large desktop devices */
+@media (min-width: 1200px) {
+	.title-super {
+		font-size: 100px;
+	}
+
+	.title-sub {
+		font-size: 40px;
+	}
+
+	.blurb-text {
+		top: 12%;
+	}
+
+	.white-line,
+	.beige-line {
+		font-size: 74px;
+		line-height: 1.4;
+	}
+
+	.tiny-line {
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+	.feature-col {
+		padding-left: 0px;
+	}
+
+	.feature-header {
+		font-size: 55px;
+	}
+
+	.featured-work {
+		margin: 0;
+		border: 0;
+	}
+
+	.logo {
+		width: 120px;
+		height: 120px;
+	}
+
+	.container {
+		width: 80%;
+		margin: auto;
+	}
+}

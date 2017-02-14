@@ -1,9 +1,8 @@
 body {
 	background-color: #846a53;
-	/*#846a53*/
-	/*#95775d*/
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: "Open Sans Condensed", sans-serif;
 	color: #fff;
+  font-size: 16px;
 }
 
 .container {
@@ -11,9 +10,37 @@ body {
 	padding: 0;
 }
 
+/* Top Section: logo and page headers */
+
 .container .title-wrap {
 	display: flex;
 	justify-content: space-between;
+}
+
+.logo {
+  margin: 15px 0 10px 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.title-super {
+  font-size: 40px;
+  opacity: 0.7;
+}
+
+.title-sub {
+  font-size: 20px;
+}
+
+.title-super,
+.title-sub {
+  margin-right: 10px;
+}
+
+/* Middle Section: main image and 'saying' */
+
+.img-main {
+  opacity: 0.8;
 }
 
 .featured-image {
@@ -22,7 +49,7 @@ body {
 	padding: 5px;
 }
 
-h2 { 
+.blurb-text { 
    position: absolute;
    margin: 0;
    top: 5%; 
@@ -30,7 +57,7 @@ h2 {
    width: 100%;
 }
 
-h2 .white-line { 
+.white-line { 
    color: #fff; 
    font: 24px/45px Helvetica, Sans-Serif; 
    letter-spacing: -1px;  
@@ -39,7 +66,7 @@ h2 .white-line {
    padding: 8px; 
 }
 
-h2 .beige-line { 
+.beige-line { 
    color: #846a53; 
    font: bold 24px/45px Helvetica, Sans-Serif; 
    letter-spacing: -1px;  
@@ -47,46 +74,24 @@ h2 .beige-line {
    background: rgba(255, 255, 255, 0.5);
    padding: 8px; 
 }
- h2 .tiny-line { 
+
+.tiny-line { 
    color: #fff; 
    font-size: 12px; 
    letter-spacing: 1px;  
    background: rgb(132, 106, 83); /* fallback color */
    background: rgba(132, 106, 83, 0.7);
    padding: 8px; 
-  
- 
 }
 
-h3 {
-	text-transform: uppercase;
-}
-
-.title-super {
-	font-size: 40px;
-	opacity: 0.7;
-}
-
-.title-sub {
-	font-size: 20px;
-}
-
-.title-super,
-.title-sub {
-	margin-right: 10px;
-}
-
-.logo {
-	margin: 15px 0 10px 10px;
-
-}
-
-.img-main {
-	opacity: 0.8;
-}
+/* Bottom Section: Featured Work */
 
 .featured-title {
 	margin-left: 15px;
+}
+
+h3 {
+  text-transform: uppercase;
 }
 
 .featured-work {
@@ -99,11 +104,73 @@ h3 {
 	margin: auto;
 }
 
+.featured-work a {
+  color: #fff;
+  font-weight: bolder;
+  padding: 0.2em;
+}
+
+.featured-work p {
+  padding: 0 15px 30px;
+}
+
 .feature-one,
 .feature-two,
 .feature-three {
 	padding: 0;
 }
+
+/* Footer: Social Media Section */
+
+footer {
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	border-top: 1px solid #e0e0e0;
+	padding: 1em;
+  text-align: center;
+}
+
+footer ul {
+  padding-left: 0;
+  
+}
+
+footer li {
+  display: inline-block;
+  padding: 10px 0px 10px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5;
+  font-size: 24px;
+}
+
+[class*="fontawesome-"]:before {
+  color: #fff;
+  display: inline-block;
+  font-family: "fontawesome", sans-serif;
+  width: 5em;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.fancy-text {
+  font-family: "Pacifico", sans-serif;
+  font-size: 16px;
+}
+
+.signature-text a {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+
 
 
 
