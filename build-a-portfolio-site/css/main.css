@@ -54,7 +54,6 @@ body {
    margin: 0;
    top: 5%; 
    left: 9%; 
-   width: 100%;
 }
 
 .white-line { 
@@ -123,8 +122,6 @@ h3 {
 /* Footer: Social Media Section */
 
 footer {
-	box-sizing: border-box;
-	flex-wrap: wrap;
 	border-top: 1px solid #e0e0e0;
 	padding: 1em;
   text-align: center;
