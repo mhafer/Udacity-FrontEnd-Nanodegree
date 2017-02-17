@@ -18,98 +18,93 @@
   <!-- icon font awesome -->
   <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
   <!-- bootstrap CSS reference -->
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- my CSS reference -->
   <link rel="stylesheet" href="css/main.css">
   <!-- my media queries -->
   <link rel="stylesheet" href="css/media.css">
-  <!-- jquery reference -->
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <!--  bootstrap js reference -->
-  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
+  <div class="container">
+<!-- top section -->
+	<header class="row title-wrap">
+	  <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+	  	<img srcset="img/my-logo-md.png 1024w,
+	  				 img/my-logo-sm.png 640w"
+	  		 sizes="100vw"
+	  		 src="img/my-logo-sm.png" class="logo" title="Michelle's Home Page" alt="Michelle's logo"/>
+	  </div>
+	  <div class="col-sm-9 col-md-9 col-lg-9 text-right text-uppercase">
+	  	<h1 class="title-super">Michelle Salema</h1>
+	  	<p class="title-sub">Web Developer</p>
+	  </div>
+	</header>
+<!-- end of top section -->
 
-	<!-- top section -->
-		<header class="row title-wrap">
-		  <div class="col-sm-3 col-md-3 col-lg-3 text-center">
-		  	<img srcset="img/my-logo-md.png 1024w,
-		  				 img/my-logo-sm.png 640w"
-		  		 sizes="100vw"
-		  		 src="img/my-logo-sm.png" class="logo" title="Michelle's Home Page" alt="Michelle's logo"/>
-		  </div>
-		  <div class="col-sm-9 col-md-9 col-lg-9 text-right text-uppercase">
-		  	<h1 class="title-super">Michelle Salema</h1>
-		  	<p class="title-sub">Web Developer</p>
-		  </div>
-		</header>
-	<!-- end of top section -->
-
-	<!-- middle section -->
-		<div class="row">
-		  <div class="col-sm-12 col-md-12 col-lg-12  featured-image"  title="Hi, I'm Michelle!">
-		  	<img srcset="img/ms-wide-1024.jpg 1024w,
-		  				 img/ms-wide-640.jpg 640w,
-		  				 img/ms-wide-320.jpg 320w"
-		  		 sizes="100vw"
-		  		 src="img/ms-wide-small.jpg" class="img-responsive img-main" alt="A picture of Michelle, a software developer"/>
-		  	<h2 class="blurb-text">
-		  		<span class="white-line">i am a</span><br/>
-			  	<span class="beige-line">pro.</span><br/>
-			  	<span class="white-line">gram.</span><br/>
-			  	<span class="beige-line">mer.</span><br/>
-			  	<span class="tiny-line">and i kick butt</span>
-			</h2>
-		  </div>
-		</div>
-	<!-- end of middle section -->
-
-	<!-- bottom content -->
-		<div class="row featured-title">
-		  <div class="col-sm-12 col-md-12 col-lg-12 text-uppercase feature-col">
-		  	<h2 class="feature-header">Featured Work</h2>
-		  </div>
-		</div>
-		<!-- featured items -->
-		<div class="row featured-work text-center">
-		  <article class="col-sm-4 col-md-4 col-lg-4 feature-one">
-		  	<img class="img-responsive" src="http://placehold.it/350x150" alt="placeholder image"/>
-		  	<h3>Appify</h3>
-		  	<p>The <a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" target="_blank" title="Click Me">link</a> here will take you to the project. But you wont find it yet... the project has yet to be started.</p>
-		  	<!-- TODO: replace with project 1 info once completed -->
-		  </article>
-		  <article class="col-sm-4 col-md-4 col-lg-4 feature-two">
-		  	<img class="img-responsive" src="http://placehold.it/350x150" alt="placeholder image"/>
-		  	<h3>Sunflower</h3>
-		  	<p>The <a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" target="_blank" title="Click Me">link</a> here will take you to the project. But you wont find it yet... the project has yet to be started.</p>
-		  	<!-- TODO: replace with project 2 info once completed -->
-		  </article>
-		  <article class="col-sm-4 col-md-4 col-lg-4 feature-three">
-		  	<img class="img-responsive" src="http://placehold.it/350x150" alt="placeholder image"/>
-		  	<h3>Bokeh</h3>
-		  	<p>The <a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" target="_blank" title="Click Me">link</a> here will take you to the project. But you wont find it yet... the project has yet to be started.</p>
-		  	<!-- TODO: replace with project 3 info once completed -->
-		  </article>
-		</div>
-	<!-- end of bottom section -->
-
-	<!-- footer -->
-		<footer class="row">
-			<!-- social media links -->
-	        <ul>
-	          <li><a href="https://www.linkedin.com/in/michellesalema" class="fontawesome-linkedin social-link" target="_blank" title="Michelle's LinkedIn"></a></li>
-	          <li><a href="mailto:missmichellesalema@gmail.com" class="fontawesome-envelope social-link" target="_blank" title="missmichellesalema@gmail.com"></a></li>
-	          <li><a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" class="fontawesome-github social-link" target="_blank" title="Michelle's Github Account"></a></li>
-	        </ul>
-	        <!-- copyright line -->
-	        <p class="copyright">Copyright© 2017 Developed By
-	        	<span class="fancy-text">by </span>
-	            <span class="signature-text"><a href="http://www.michellesalema.com" target="_blank" title="Michelle's Previous Website">Michelle Hafer</a></span>
-	        </p>
-	     </footer>
-	     <!-- end of footer -->
+<!-- middle section -->
+	<div class="row">
+	  <div class="col-sm-12 col-md-12 col-lg-12  featured-image"  title="Hi, I'm Michelle!">
+	  	<img srcset="img/ms-wide-1024.jpg 1024w,
+	  				 img/ms-wide-640.jpg 640w,
+	  				 img/ms-wide-320.jpg 320w"
+	  		 sizes="100vw"
+	  		 src="img/ms-wide-small.jpg" class="img-responsive img-main" alt="A picture of Michelle, a software developer"/>
+	  	<h2 class="blurb-text">
+	  		<span class="white-line">i am a</span><br/>
+		  	<span class="beige-line">pro.</span><br/>
+		  	<span class="white-line">gram.</span><br/>
+		  	<span class="beige-line">mer.</span><br/>
+		  	<span class="tiny-line">and i kick butt</span>
+		</h2>
+	  </div>
 	</div>
-	<!-- end of container -->
+<!-- end of middle section -->
+
+<!-- bottom content -->
+	<div class="row featured-title">
+	  <div class="col-sm-12 col-md-12 col-lg-12 text-uppercase feature-col">
+	  	<h2 class="feature-header">Featured Work</h2>
+	  </div>
+	</div>
+	<!-- featured items -->
+	<div class="row featured-work text-center">
+	  <article class="col-sm-4 col-md-4 col-lg-4 feature-one">
+	  	<img class="img-responsive" src="http://placehold.it/350x150" alt="placeholder image"/>
+	  	<h3>Appify</h3>
+	  	<p>The <a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" target="_blank" title="Click Me">link</a> here will take you to the project. But you wont find it yet... the project has yet to be started.</p>
+	  	<!-- TODO: replace with project 1 info once completed -->
+	  </article>
+	  <article class="col-sm-4 col-md-4 col-lg-4 feature-two">
+	  	<img class="img-responsive" src="http://placehold.it/350x150" alt="placeholder image"/>
+	  	<h3>Sunflower</h3>
+	  	<p>The <a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" target="_blank" title="Click Me">link</a> here will take you to the project. But you wont find it yet... the project has yet to be started.</p>
+	  	<!-- TODO: replace with project 2 info once completed -->
+	  </article>
+	  <article class="col-sm-4 col-md-4 col-lg-4 feature-three">
+	  	<img class="img-responsive" src="http://placehold.it/350x150" alt="placeholder image"/>
+	  	<h3>Bokeh</h3>
+	  	<p>The <a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" target="_blank" title="Click Me">link</a> here will take you to the project. But you wont find it yet... the project has yet to be started.</p>
+	  	<!-- TODO: replace with project 3 info once completed -->
+	  </article>
+	</div>
+<!-- end of bottom section -->
+
+<!-- footer -->
+	<footer class="row">
+		<!-- social media links -->
+        <ul>
+          <li><a href="https://www.linkedin.com/in/michellesalema" class="fontawesome-linkedin social-link" target="_blank" title="Michelle's LinkedIn"></a></li>
+          <li><a href="mailto:missmichellesalema@gmail.com" class="fontawesome-envelope social-link" target="_blank" title="missmichellesalema@gmail.com"></a></li>
+          <li><a href="https://github.com/mhafer/Udacity-FrontEnd-Nanodegree" class="fontawesome-github social-link" target="_blank" title="Michelle's Github Account"></a></li>
+        </ul>
+        <!-- copyright line -->
+        <p class="copyright">Copyright© 2017 Developed By
+        	<span class="fancy-text">by </span>
+            <span class="signature-text"><a href="http://www.michellesalema.com" target="_blank" title="Michelle's Previous Website">Michelle Hafer</a></span>
+        </p>
+     </footer>
+     <!-- end of footer -->
+  </div>
+<!-- end of container -->
 </body>
 </html>
