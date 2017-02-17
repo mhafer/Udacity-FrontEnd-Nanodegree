@@ -41,12 +41,13 @@ body {
 
 .img-main {
   opacity: 0.8;
+  width: 100%;
 }
 
 .featured-image {
 	position: relative;
 	line-height: 8px;
-	padding: 5px;
+	padding: 0;
 }
 
 .blurb-text { 
